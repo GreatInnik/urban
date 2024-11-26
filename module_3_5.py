@@ -1,14 +1,14 @@
 def get_multiplied_digits(number):
     if number == 0:
-        return 1  # Изменяем на 1, чтобы не влиять на произведение
+        return 1 
     str_number = str(number)
     first = int(str_number[0])
 
-    # Игнорируем нули в конце числа
+   
     while str_number and str_number[-1] == '0':
         str_number = str_number[:-1]
 
-    if not str_number:  # Если все цифры были нулями
+    if not str_number:
         return 1
 
     if len(str_number) == 1:
